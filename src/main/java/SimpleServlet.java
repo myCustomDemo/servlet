@@ -6,12 +6,14 @@ import javax.servlet.http.HttpServletResponse;
 
 public class SimpleServlet extends HttpServlet {
 
+
     private static final long serialVersionUID = -4751096228274971485L;
 
     @Override
     protected void doGet(HttpServletRequest reqest, HttpServletResponse response)
             throws ServletException, IOException {
-        response.getWriter().println("Hello World!");
+        response.setContentType("text/html");
+        response.getOutputStream().println("Hello World!");
     }
 
     @Override
