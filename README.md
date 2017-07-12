@@ -2,7 +2,7 @@
 sudo apt install tomcat8<br />
 
 **Building**<br />
-https://github.com/myCustomDemo/servlet.git<br />
+git clone https://github.com/myCustomDemo/servlet.git<br />
 cd servlet<br />
 mvn clean package<br />
 sudo chmod 777 target/test-1.war<br />
